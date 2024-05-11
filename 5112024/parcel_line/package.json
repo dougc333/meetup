@@ -1,0 +1,19 @@
+{
+  "name": "parcel_line",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "buffer": "^6.0.3",
+    "parcel": "^2.12.0"
+  },
+  "dependencies": {
+    "echarts": "^5.5.0"
+  }
+}
