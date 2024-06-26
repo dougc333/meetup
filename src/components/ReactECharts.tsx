@@ -27,22 +27,14 @@ export function ReactECharts({
       chart = init(chartRef.current, theme);
     }
 
-    // Add chart resize listener
-    // ResizeObserver is leading to a bit janky UX
-    function resizeChart() {
-      chart?.resize();
-    }
-    window.addEventListener("resize", resizeChart);
-
-    // Return cleanup function
     return () => {
       chart?.dispose();
-      window.removeEventListener("resize", resizeChart);
     };
   }, [theme]);
 
   useEffect(() => {
-    // Update chart
+    // Update chart where is theme in setOption? It is in the 
+    // other useEffet. Why? you have to reinit another instance for theme? 
     if (chartRef.current !== null) {
       const chart = getInstanceByDom(chartRef.current);
       chart?.setOption(option, settings);
