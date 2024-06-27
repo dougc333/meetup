@@ -1,7 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import { init, getInstanceByDom } from "echarts";
-// import type { CSSProperties } from "react";
-// import type { EChartsOption, ECharts, SetOptionOpts } from "echarts";
+import { init  } from "echarts";
 
 //this is uncontrolled
 export function ReactECharts({  
